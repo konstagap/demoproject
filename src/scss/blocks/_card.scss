@@ -1,0 +1,177 @@
+@mixin imgPosition($top_position) {
+    .card__img {
+        top: $top_position;
+    }
+}
+.card {
+    max-width: 442px;
+    min-height: 358px;
+    margin-bottom: 50px;
+    position: relative;
+    &__inner {
+        height: 100%;
+    }
+    &__img {
+        position: absolute;
+        top: 73px;
+        left: -90px;
+        z-index: 5;
+        max-width: fit-content;
+        width: 100%;
+        height: auto;
+    }
+    &__context {
+        height: 100%;
+        padding-top: 49px;
+        padding-right: 50px;
+        padding-left: 172px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        z-index: 3;
+        font-family: $Helvetica;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 130%;
+        color: $primary-text;
+        margin-bottom: 20px;
+    }
+    &__text {
+        flex: 1;
+        z-index: 3;
+        font-family: $Avenir;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 160%;
+        color: $secondary-text;
+        margin-bottom: 20px;
+    }
+    &__link {
+        z-index: 3;
+        font-family: $Avenir;
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 160%;
+        letter-spacing: 0.005em;
+        color: $primary-text;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 33px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 20px;
+            width: 22px;
+            height: 16px;
+            background-image: url("../../images/arrow_right.svg");
+        }
+    }
+
+    &--first {
+        @include imgPosition(73px);
+        background-image: url(../../images/card_bg/Rectangle1.svg);
+        background-repeat: no-repeat;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 15px;
+            right: 12px;
+            width: 203px;
+            height: 168px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/card_bg/bg_elemets/bg1/Vector1_1.svg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 44px;
+            right: 118px;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/card_bg/bg_elemets/bg1/Ellipse1_2.svg);
+        }
+    }
+    &--second {
+        @include imgPosition(71px);
+        background-image: url(../../images/card_bg/Rectangle2.svg);
+        background-repeat: no-repeat;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: -7px;
+            right: 19px;
+            width: 220px;
+            height: 168px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/card_bg/bg_elemets/bg2/Vector2_1.svg);
+        }
+    }
+    &--third {
+        @include imgPosition(123px);
+        background-image: url(../../images/card_bg/Rectangle3.svg);
+        background-repeat: no-repeat;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 22px;
+            right: 23px;
+            width: 81px;
+            height: 52px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/card_bg/bg_elemets/bg3/Ellipse3_1.svg);
+        }
+    }
+    &--forth {
+        @include imgPosition(86px);
+        background-image: url(../../images/card_bg/Rectangle4.svg);
+        background-repeat: no-repeat;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 13px;
+            right: 67px;
+            width: 323.58px;
+            height: 230.28px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/card_bg/bg_elemets/bg4/Vector4_1.svg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 24px;
+            right: 24px;
+            width: 68px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/card_bg/bg_elemets/bg4/Ellipse4_2.svg);
+        }
+    }
+}
+
+@media (max-width: 555px) {
+    .card {
+        background-image: none;
+        margin-bottom: 5px;
+        &__inner {
+            text-align: center;
+        }
+        &__img {
+            position: static;
+        }
+        &__context {
+            padding: 5px 10px;
+        }
+    }
+}

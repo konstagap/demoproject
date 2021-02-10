@@ -1,0 +1,170 @@
+.footer {
+    border-top: 2px solid rgba(#9c69e2, 0.2);
+    padding-top: 100px;
+    padding-bottom: 89px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    &__top-title {
+        font-family: $Helvetica;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 130%;
+        color: $primary-text;
+        margin-bottom: 20px;
+    }
+    &__top-text {
+        font-family: $Avenir;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 160%;
+        color: $secondary-text;
+    }
+
+    &__main-inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__contacts {
+        min-width: 335px;
+    }
+    &__contacts-brand {
+        display: flex;
+        align-items: center;
+        margin-bottom: 65px;
+        .logo {
+            margin-right: 20px;
+        }
+    }
+    &__brand-title {
+        font-family: $Avenir;
+        font-weight: 900;
+        font-size: 1.25rem;
+        line-height: 160%;
+        color: $primary-text;
+    }
+    &__address {
+        font-family: $Avenir;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 180%;
+        letter-spacing: 0.01em;
+        margin-bottom: 10px;
+        color: $primary-text;
+    }
+    &__email {
+        display: block;
+        text-decoration: none;
+        font-family: $Avenir;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 180%;
+        letter-spacing: 0.01em;
+        color: $primary-text;
+    }
+    &__phone {
+        display: block;
+        text-decoration: none;
+        font-family: $Avenir;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 180%;
+        letter-spacing: 0.01em;
+        color: $primary-text;
+    }
+
+    &__nav {
+        max-width: 170px;
+    }
+    &__title {
+        padding-top: 7px;
+        font-family: $Avenir;
+        font-weight: 900;
+        font-size: 1rem;
+        line-height: 160%;
+        color: $primary-text;
+        margin-bottom: 30px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        font-family: $Avenir;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 250%;
+        color: $primary-text;
+    }
+
+    &__icons-list {
+        display: flex;
+        justify-content: space-between;
+        min-width: 178px;
+    }
+    &__icon-link {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    &__icon-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding-top: 60px;
+        &__top-buttons {
+            display: flex;
+            flex-direction: column-reverse;
+            .btn {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+        }
+        &__top {
+            margin-bottom: 30px;
+        }
+        &__main-inner {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__social {
+            order: 2;
+        }
+        &__nav {
+            order: 3;
+        }
+        &__contacts {
+            min-width: auto;
+        }
+        &__contacts-brand {
+            margin-left: -40px;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 641px) {
+    .footer {
+        padding-top: 20px;
+
+        &__top {
+            flex-direction: column-reverse;
+            margin-bottom: 30px;
+        }
+        &__top-content {
+            text-align: center;
+        }
+    }
+}

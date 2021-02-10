@@ -1,0 +1,49 @@
+.burger {
+    display: none;
+}
+@media (max-width: 425px) {
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        span {
+            position: absolute;
+            background-color: black;
+            left: 0;
+            height: 2px;
+            top: 9px;
+            width: 100%;
+            transition: $transition;
+        }
+        &::after,
+        &::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: $transition;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+        &--active {
+            &::before {
+                transform: rotate(45deg);
+                top: 9px;
+            }
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 9px;
+            }
+            span {
+                transform: scale(0);
+            }
+        }
+    }
+}

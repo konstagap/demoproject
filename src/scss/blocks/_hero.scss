@@ -1,0 +1,51 @@
+.hero {
+    margin: 237px auto 103px;
+    max-width: 1378px;
+    background-image: url("../../images/hero.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom;
+    &__inner {
+        padding-bottom: 100px;
+    }
+    &__title {
+        max-width: 645px;
+        font-family: $Helvetica;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 110%;
+        margin-bottom: 50px;
+    }
+    &__text {
+        max-width: 380px;
+        font-family: $Avenir;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 160%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 877px) {
+    .hero {
+        margin: 100px auto 50px;
+        max-width: 600px;
+        background-image: none;
+        text-align: center;
+        &__text {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 555px) {
+    .hero {
+        &__title {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        &__text {
+            margin-bottom: 30px;
+        }
+    }
+}

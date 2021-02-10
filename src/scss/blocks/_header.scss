@@ -1,0 +1,27 @@
+.header {
+    position: fixed;
+    top: 47px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: $transition;
+    }
+}
+
+@media (max-width: 877px) {
+    .header {
+        top: 10px;
+    }
+}
+
+@media (max-width: 656px) {
+    .header {
+        &__btn {
+            display: none;
+        }
+    }
+}

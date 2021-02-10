@@ -1,0 +1,64 @@
+@mixin regularBtn() {
+  display: inline-block;
+  color: #ffffff;
+  font-family: $Avenir;
+  font-size: 1.125rem;
+  line-height: 160%;
+  text-align: center;
+  padding: 0.93rem 2.125rem;
+}
+@mixin arrowBtn() {
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  line-height: 160%;
+  padding: 1.06rem 4.125rem 1.06rem 1.8125rem;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 17px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../images/arrow_right.svg");
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 50px;
+  min-height: 3.72rem;
+  text-decoration: none;
+  font-family: $Avenir;
+  font-size: 1rem;
+  color: $primary-text;
+  transition: $transition;
+  &:hover {
+    box-shadow: 0px 10px 12px rgba(24, 26, 27, 0.26);
+  }
+
+  &__header {
+    @include arrowBtn();
+    font-weight: 800;
+  }
+
+  &__hero {
+    @include regularBtn();
+    background: #9c69e2;
+    font-weight: 800;
+  }
+
+  &__footer-regular {
+    @include regularBtn();
+    font-weight: 900;
+    background: #f063b8;
+    margin-right: 30px;
+  }
+
+  &__footer-arrow {
+    @include arrowBtn();
+    font-weight: 900;
+  }
+}

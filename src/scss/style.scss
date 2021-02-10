@@ -1,0 +1,57 @@
+/* Variables*/
+@import "vars";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-size: $font-size;
+}
+
+body {
+    background: $background-main;
+    font-family: $Avenir;
+    font-size: $font-size;
+    line-height: $line-height;
+    position: relative;
+}
+// I have includet normalize but still want to reset margins on h tags.
+
+h1,
+h2,
+h3,
+h4,
+h5.h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/hero";
+@import "blocks/intro";
+@import "blocks/features";
+@import "blocks/card";
+@import "blocks/testemonials";
+@import "blocks/slider";
+@import "blocks/footer";
+@import "blocks/burger";
+
+// Changing main font size to scale down with screen size.
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+}

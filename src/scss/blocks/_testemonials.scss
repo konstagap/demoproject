@@ -1,0 +1,30 @@
+.testimonials {
+    margin-bottom: 150px;
+    &__inner {
+        background: rgba(156, 105, 226, 1);
+        border-radius: 50px;
+        padding-top: 109px;
+        padding-left: 93px;
+    }
+    &__title {
+        font-family: $Helvetica;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 130%;
+        color: #ffffff;
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 877px) {
+    .testimonials {
+        margin-bottom: 70px;
+        &__inner {
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+}

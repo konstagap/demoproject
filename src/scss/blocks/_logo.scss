@@ -1,0 +1,15 @@
+.logo {
+    margin-right: 121px;
+    z-index: 100;
+    cursor: pointer;
+    &__link {
+        max-width: 49px;
+        max-height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-right: 0;
+    }
+}
