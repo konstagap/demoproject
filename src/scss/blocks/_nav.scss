@@ -46,6 +46,7 @@
         transform: translateY(-130%);
         &__list {
             flex-direction: column;
+            min-width: 100%;
         }
         &__list-item {
             text-align: center;
