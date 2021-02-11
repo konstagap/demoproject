@@ -37,7 +37,7 @@ function styles() {
         grid: 'autoplace'
       })
     )
-    .pipe(dest('src/css'))
+    .pipe(dest('src/css/styles'))
     .pipe(browserSync.stream());
 }
 
@@ -62,12 +62,7 @@ function clean() {
 
 function build() {
   return src(
-    [
-      'src/css/style.min.css',
-      'src/fonts/**/*',
-      'src/js/main.min.js',
-      'src/*.html'
-    ],
+    ['src/css/**/*', 'src/fonts/**/*', 'src/js/main.min.js', 'src/*.html'],
     { base: 'src' }
   ).pipe(dest('dist'));
 }
