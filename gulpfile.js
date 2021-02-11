@@ -37,7 +37,7 @@ function styles() {
         grid: 'autoplace'
       })
     )
-    .pipe(dest('src/css/styles'))
+    .pipe(dest('src/css/'))
     .pipe(browserSync.stream());
 }
 

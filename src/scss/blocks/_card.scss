@@ -68,13 +68,13 @@
             margin-left: 20px;
             width: 22px;
             height: 16px;
-            background-image: url("../../images/arrow_right.svg");
+            background-image: url("../images/arrow_right.svg");
         }
     }
 
     &--first {
         @include imgPosition(73px);
-        background-image: url(../../images/card_bg/Rectangle1.svg);
+        background-image: url("../images/card_bg/Rectangle1.svg");
         background-repeat: no-repeat;
         &::before {
             content: "";
@@ -85,7 +85,7 @@
             width: 203px;
             height: 168px;
             background-repeat: no-repeat;
-            background-image: url(../../images/card_bg/bg_elemets/bg1/Vector1_1.svg);
+            background-image: url("../images/card_bg/bg_elemets/bg1/Vector1_1.svg");
         }
         &::after {
             content: "";
@@ -96,12 +96,12 @@
             width: 40px;
             height: 40px;
             background-repeat: no-repeat;
-            background-image: url(../../images/card_bg/bg_elemets/bg1/Ellipse1_2.svg);
+            background-image: url("../images/card_bg/bg_elemets/bg1/Ellipse1_2.svg");
         }
     }
     &--second {
         @include imgPosition(71px);
-        background-image: url(../../images/card_bg/Rectangle2.svg);
+        background-image: url("../images/card_bg/Rectangle2.svg");
         background-repeat: no-repeat;
         &::before {
             content: "";
@@ -112,12 +112,12 @@
             width: 220px;
             height: 168px;
             background-repeat: no-repeat;
-            background-image: url(../../images/card_bg/bg_elemets/bg2/Vector2_1.svg);
+            background-image: url("../images/card_bg/bg_elemets/bg2/Vector2_1.svg");
         }
     }
     &--third {
         @include imgPosition(123px);
-        background-image: url(../../images/card_bg/Rectangle3.svg);
+        background-image: url("../images/card_bg/Rectangle3.svg");
         background-repeat: no-repeat;
         &::before {
             content: "";
@@ -128,12 +128,12 @@
             width: 81px;
             height: 52px;
             background-repeat: no-repeat;
-            background-image: url(../../images/card_bg/bg_elemets/bg3/Ellipse3_1.svg);
+            background-image: url("../images/card_bg/bg_elemets/bg3/Ellipse3_1.svg");
         }
     }
     &--forth {
         @include imgPosition(86px);
-        background-image: url(../../images/card_bg/Rectangle4.svg);
+        background-image: url("../images/card_bg/Rectangle4.svg");
         background-repeat: no-repeat;
         &::before {
             content: "";
@@ -144,7 +144,7 @@
             width: 323.58px;
             height: 230.28px;
             background-repeat: no-repeat;
-            background-image: url(../../images/card_bg/bg_elemets/bg4/Vector4_1.svg);
+            background-image: url("../images/card_bg/bg_elemets/bg4/Vector4_1.svg");
         }
         &::after {
             content: "";
@@ -155,7 +155,7 @@
             width: 68px;
             height: 45px;
             background-repeat: no-repeat;
-            background-image: url(../../images/card_bg/bg_elemets/bg4/Ellipse4_2.svg);
+            background-image: url("../images/card_bg/bg_elemets/bg4/Ellipse4_2.svg");
         }
     }
 }
