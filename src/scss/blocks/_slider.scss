@@ -102,13 +102,13 @@
         margin-right: 20px;
         width: 45px;
         height: 20px;
-        background-image: url(../../images/slider/nav_arrows/leftArrow.svg);
+        background-image: url("../images/slider/nav_arrows/leftArrow.svg");
     }
     &__arrow-right {
         @include btn();
         width: 25px;
         height: 20px;
-        background-image: url(../../images/slider/nav_arrows/rightArrow.svg);
+        background-image: url("../images/slider/nav_arrows/rightArrow.svg");
     }
 }
 

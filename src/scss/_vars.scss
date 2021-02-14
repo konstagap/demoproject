@@ -1,18 +1,29 @@
-$background-main:linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+$background-main: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
 
-
-$primary-text:   #212353;
-$secondary-text: #4B5D68;
+$primary-text: #212353;
+$secondary-text: #4b5d68;
 
 // I could not find Avenir and Helvetica on google fonts for free.
-// I have added these two and gave all text proper weight and size.
+// I have added Montserrat,Open Sans instead and gave text proper weight and size.
+// Have found Helvetica regular and added to fonts folder,
+// it will work on light weight fonts, then Open Sans kicks in.
 
-$Avenir : 'Montserrat', sans-serif;
-$Helvetica: 'Open Sans', sans-serif;
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica/Helvetica.eot");
+    src: local("☺"), url("../fonts/Helvetica/Helvetica.woff") format("woff"),
+        url("../fonts/Helvetica/Helvetica.ttf") format("truetype"),
+        url("../fonts/Helvetica/Helvetica.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
-$transition: .1s linear;
+$Avenir: "Montserrat", sans-serif;
+$Helvetica: "Helvetica", "Open Sans", sans-serif;
+
+$transition: 0.1s linear;
 
 $font-size: 16px;
-$line-height:16px;
+$line-height: 16px;
 
 $container-width: 1150px;

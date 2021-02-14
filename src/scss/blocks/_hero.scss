@@ -14,9 +14,11 @@
         font-weight: bold;
         font-size: 5rem;
         line-height: 110%;
+        color: $primary-text;
         margin-bottom: 50px;
     }
     &__text {
+        color: $primary-text;
         max-width: 380px;
         font-family: $Avenir;
         font-weight: 500;
